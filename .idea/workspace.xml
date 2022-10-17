@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="066f1a2f-710f-4567-b93c-57830d8e8b2c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BubbleSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BubbleSorter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +77,8 @@
       <option name="presentableId" value="Default" />
       <updated>1666025571617</updated>
       <workItem from="1666025573566" duration="5881000" />
-      <workItem from="1666042270889" duration="3416000" />
+      <workItem from="1666042270889" duration="3820000" />
+      <workItem from="1666046123150" duration="187000" />
     </task>
     <servers />
   </component>
