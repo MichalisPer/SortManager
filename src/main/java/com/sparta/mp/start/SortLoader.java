@@ -3,63 +3,50 @@ package com.sparta.mp.start;
 import com.sparta.mp.display.DisplayManager;
 import com.sparta.mp.sorters.Sorter;
 
-import java.util.InputMismatchException;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
+import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 
 public class SortLoader {
-    private static final int NUMBER_OF_SORTERS = 5;
-    private static final int MAX_NUMBER_OF_ELEMENTS = 1000;
 
     public static void start() {
         Scanner in = new Scanner(System.in);
 
-        // prints the intro of the SortManager project
-        DisplayManager.printSortSelectionDescription();
+        DisplayManager.printRequestForSorter(); //prints the request for sorter
 
-        int sorterSelection; // the selected sorting algorithm to be used
+        Pattern pattern = Pattern.compile("[1-5]"); //pattern for expected input for sorter
 
-        /*
-          loop that ensures that sorterSelection will be one of [1,2,3,4,5]
-          handles cases where input is not an integer
-          handles cases where input does not correspond to a specific algorithm
-         */
+        int sorterSelection; //the selected sorting algorithm to be used
+
+        // loop that ensures that sorterSelection will be one of [1,2,3,4,5]
         do {
             try {
-                sorterSelection = in.nextInt();
-                if (sorterSelection <= 0 || sorterSelection > NUMBER_OF_SORTERS) {
-                    System.out.print("\nWrong input! Please give a number that corresponds to one of the sorters: ");
-                    continue;
-                }
+                sorterSelection = Integer.parseInt(in.next(pattern));
                 break;
-            } catch (InputMismatchException exp) {
-                System.out.print("\nWrong input! Please give an integer number: ");
-                in.next();
+            } catch (NoSuchElementException e) {
+                DisplayManager.printWrongInputMessage(1, 5);
+
+                in.nextLine();
             }
         } while (true);
 
+
         // display the description for user to input the number of elements of the array
-        DisplayManager.printNumberOfElementsDescription();
+        DisplayManager.printRequestForElements();
+
+        //expected pattern for number of elements
+        pattern = Pattern.compile("1000|[1-9][0-9]{0,2}");
 
         int numberOfElements; // the number of elements in the array
 
-        /*
-          loop that ensures that sorterSelection will be one of [1,2,3,4,5]
-          handles cases where input is not an integer
-          handles cases where input does not correspond to a specific algorithm
-         */
+        // loop that ensures that sorterSelection will be in range [1-1000]
         do {
             try {
-                numberOfElements = in.nextInt();
-                if (numberOfElements <= 0 || numberOfElements > MAX_NUMBER_OF_ELEMENTS) {
-                    System.out.print("\nWrong input! Please give a number within the range of [1, 1000]: ");
-                    continue;
-                }
+                numberOfElements = Integer.parseInt(in.next(pattern));
                 break;
-            } catch (InputMismatchException exp) {
-                System.out.print("\nWrong input! Please give an integer number: ");
-                in.next();
+            } catch (NoSuchElementException e) {
+                DisplayManager.printWrongInputMessage(1, 1000);
+                in.nextLine();
             }
         } while (true);
 
@@ -67,10 +54,13 @@ public class SortLoader {
 
         Sorter sorter = SortFactory.getSorter(sorterSelection);
 
-        sorter.sortArray(array);
+        int[] sortedArray = sorter.sortArray(array);
+
+        DisplayManager.displayResults(sorter,array,sortedArray);
     }
 
     private static int[] generateRandomArray(int numberOfElements) {
-        return IntStream.generate(() -> new Random().nextInt(1000)).limit(numberOfElements).toArray();
+        return IntStream.generate(() -> new Random().nextInt(1000))
+                .limit(numberOfElements).toArray();
     }
 }
