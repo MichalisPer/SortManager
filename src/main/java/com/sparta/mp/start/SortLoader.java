@@ -1,6 +1,7 @@
 package com.sparta.mp.start;
 
 import com.sparta.mp.display.DisplayManager;
+import com.sparta.mp.sorters.Sorter;
 
 import java.util.InputMismatchException;
 import java.util.Random;
@@ -63,6 +64,10 @@ public class SortLoader {
         } while (true);
 
         int[] array = generateRandomArray(numberOfElements);
+
+        Sorter sorter = SortFactory.getSorter(sorterSelection);
+
+        sorter.sortArray(array);
     }
 
     private static int[] generateRandomArray(int numberOfElements) {
