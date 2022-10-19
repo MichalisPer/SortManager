@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="066f1a2f-710f-4567-b93c-57830d8e8b2c" name="Changes" comment="Change user input validation using regex / MVP with BubbleSorter">
+    <list default="true" id="066f1a2f-710f-4567-b93c-57830d8e8b2c" name="Changes" comment="Implementation of MergeSort algorithm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/display/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/display/DisplayManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/InsertionSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/InsertionSorter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +87,7 @@
       <workItem from="1666094471664" duration="3720000" />
       <workItem from="1666102615548" duration="4864000" />
       <workItem from="1666170378649" duration="61000" />
-      <workItem from="1666191440957" duration="10739000" />
+      <workItem from="1666191440957" duration="12199000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation of sortArray method in BubbleSorter class">
       <created>1666046393218</created>
@@ -106,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666197293179</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implementation of MergeSort algorithm">
+      <created>1666217042559</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666217042559</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,57 +130,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Implementation of sortArray method in BubbleSorter class" />
     <MESSAGE value="Change user input validation using regex / MVP with BubbleSorter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change user input validation using regex / MVP with BubbleSorter" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Implementation of MergeSort algorithm" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of MergeSort algorithm" />
   </component>
 </project>
