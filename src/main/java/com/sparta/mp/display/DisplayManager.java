@@ -31,8 +31,8 @@ public class DisplayManager {
     }
 
     public static void displayResults(Sorter sorter, int[] array, int[] sortedArray) {
-        System.out.println("Unsorted array:\n" + Arrays.toString(array));
-        System.out.println("\nSorting using " + sorter.toString() +"...");
+        System.out.println("\nUnsorted array:\n" + Arrays.toString(array));
+        System.out.println("\nSorting array using " + sorter.toString() +"...");
         System.out.println("\nSorted array:\n" + Arrays.toString(sortedArray));
     }
 }

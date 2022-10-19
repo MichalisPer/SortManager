@@ -7,7 +7,7 @@ import java.util.*;
 import java.util.regex.Pattern;
 import java.util.stream.IntStream;
 
-public class SortLoader {
+public class SortManager {
 
     public static void start() {
         Scanner in = new Scanner(System.in);
