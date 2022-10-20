@@ -37,4 +37,9 @@ public class QuickSorter implements Sorter {
         arr[j] = arr[i];
         arr[i] = temp;
     }
+
+    @Override
+    public String toString() {
+        return "QuickSort algorithm";
+    }
 }

@@ -30,9 +30,10 @@ public class DisplayManager {
                 Choose the sorter you wish to use (enter the corresponding number):\040""");
     }
 
-    public static void displayResults(Sorter sorter, int[] array, int[] sortedArray) {
+    public static void displayResults(Sorter sorter, int[] array) {
         System.out.println("\nUnsorted array:\n" + Arrays.toString(array));
         System.out.println("\nSorting array using " + sorter.toString() +"...");
+        int[] sortedArray = sorter.sortArray(array);
         System.out.println("\nSorted array:\n" + Arrays.toString(sortedArray));
     }
 }

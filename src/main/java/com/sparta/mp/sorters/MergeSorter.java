@@ -43,4 +43,9 @@ public class MergeSorter implements Sorter {
             array[low + leftCounter + rightCounter] = rightArr[rightCounter++];
         }
     }
+
+    @Override
+    public String toString() {
+        return "MergeSort algorithm";
+    }
 }

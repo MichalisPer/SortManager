@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="066f1a2f-710f-4567-b93c-57830d8e8b2c" name="Changes" comment="Implementation of BinarySorter using in order traversal in BinaryTreeImpl">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/display/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/display/DisplayManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BinarySorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BinarySorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/binarytree/BinaryTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/binarytree/BinaryTreeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/InsertionSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/InsertionSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/QuickSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/QuickSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +47,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/perik/Desktop/SpartaGlobal/Projects/SortManager/src/main/java/com/sparta/mp",
+    "last_opened_file_path": "C:/Users/perik/Desktop/SpartaGlobal/JavaPrograms/Logging",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,7 +64,7 @@
       <recent name="C:\Users\perik\Desktop\SpartaGlobal\Projects\SortManager\src\main\java\com\sparta\mp" />
     </key>
   </component>
-  <component name="RunManager" selected="Java Scratch.Scratch">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sparta.mp.start.Main" />
       <module name="SortManager" />
@@ -82,8 +87,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Java Scratch.Scratch" />
       </list>
     </recent_temporary>
   </component>
@@ -103,7 +108,7 @@
       <workItem from="1666170378649" duration="61000" />
       <workItem from="1666191440957" duration="14014000" />
       <workItem from="1666253937274" duration="19539000" />
-      <workItem from="1666299768275" duration="902000" />
+      <workItem from="1666299768275" duration="5831000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation of sortArray method in BubbleSorter class">
       <created>1666046393218</created>

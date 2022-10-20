@@ -1,0 +1,12 @@
+2022-10-20 INFO Display message for sorter selection
+2022-10-20 INFO Do-While loop for sorter input started
+2022-10-20 FINE Before user's input
+2022-10-20 INFO After loop for sorter input where sorter selection = 1
+2022-10-20 INFO Display message for number of elements selection
+2022-10-20 INFO Do-While loop for number of elements input started
+2022-10-20 FINE Before user's input
+2022-10-20 INFO After loop for number of elements input where number of elements =  10
+2022-10-20 INFO After random generation of array:
+[548, 502, 74, 21, 383, 750, 795, 492, 825, 682]
+2022-10-20 INFO Sort selection: 1 Sorter: BinarySorter
+2022-10-20 INFO Program terminates

@@ -23,4 +23,9 @@ public class InsertionSorter implements Sorter {
         arr[j] = arr[j - 1];
         arr[j - 1] = temp;
     }
+
+    @Override
+    public String toString() {
+        return "InsertionSort algorithm";
+    }
 }
