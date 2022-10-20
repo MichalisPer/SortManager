@@ -1,8 +1,13 @@
 package com.sparta.mp.sorters;
 
+import com.sparta.mp.sorters.binarytree.BinaryTree;
+import com.sparta.mp.sorters.binarytree.BinaryTreeImpl;
+
 public class BinarySorter implements Sorter {
     @Override
     public int[] sortArray(int[] array) {
-        return new int[0];
+        BinaryTree tree = new BinaryTreeImpl(array);
+
+        return tree.getSortedTreeAsc();
     }
 }

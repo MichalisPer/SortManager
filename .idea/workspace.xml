@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="066f1a2f-710f-4567-b93c-57830d8e8b2c" name="Changes" comment="Implementation of QuickSort algorithm">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BinarySorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BinarySorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/binarytree/BinaryTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/binarytree/BinaryTreeImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +90,7 @@
       <workItem from="1666102615548" duration="4864000" />
       <workItem from="1666170378649" duration="61000" />
       <workItem from="1666191440957" duration="14014000" />
-      <workItem from="1666253937274" duration="11949000" />
+      <workItem from="1666253937274" duration="18059000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation of sortArray method in BubbleSorter class">
       <created>1666046393218</created>

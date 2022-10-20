@@ -1,5 +1,7 @@
 package com.sparta.mp.sorters.binarytree;
 
+import java.util.Arrays;
+
 public class BinaryTreeImpl implements BinaryTree {
 
     private final Node root;
@@ -48,6 +50,12 @@ public class BinaryTreeImpl implements BinaryTree {
     public BinaryTreeImpl(int element) {
         this.root = new Node(element);
         this.numOfNodes++;
+    }
+
+    public BinaryTreeImpl(int[] array) {
+        this.root = new Node(array[0]);
+        this.numOfNodes++;
+        addElements(Arrays.copyOfRange(array, 1, array.length));
     }
 
     @Override
@@ -128,12 +136,26 @@ public class BinaryTreeImpl implements BinaryTree {
 
     @Override
     public int[] getSortedTreeAsc() {
-        return new int[0];
+        int[] arr = new int[this.numOfNodes];
+        inOrderTraversal(this.root, arr, 0, true);
+        return arr;
     }
 
     @Override
     public int[] getSortedTreeDesc() {
-        return new int[0];
+        int[] arr = new int[this.numOfNodes];
+        inOrderTraversal(this.root, arr, 0, false);
+        return arr;
+    }
+
+    private int inOrderTraversal(Node node, int[] arr, int counter, boolean isAsc) {
+        if (node != null) {
+            counter = inOrderTraversal(isAsc ? node.getLeftChild() : node.getRightChild(), arr, counter, isAsc);
+            arr[counter++] = node.getValue();
+            counter = inOrderTraversal(isAsc ? node.getRightChild() : node.getLeftChild(), arr, counter, isAsc);
+            return counter;
+        }
+        return counter;
     }
 
 }
