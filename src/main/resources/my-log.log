@@ -1,12 +1,20 @@
-2022-10-20 INFO Display message for sorter selection
-2022-10-20 INFO Do-While loop for sorter input started
-2022-10-20 FINE Before user's input
-2022-10-20 INFO After loop for sorter input where sorter selection = 1
-2022-10-20 INFO Display message for number of elements selection
-2022-10-20 INFO Do-While loop for number of elements input started
-2022-10-20 FINE Before user's input
-2022-10-20 INFO After loop for number of elements input where number of elements =  10
-2022-10-20 INFO After random generation of array:
-[548, 502, 74, 21, 383, 750, 795, 492, 825, 682]
-2022-10-20 INFO Sort selection: 1 Sorter: BinarySorter
-2022-10-20 INFO Program terminates
+2022-10-21 null INFO Display message for sorter selection
+2022-10-21 null INFO Do-While loop for sorter input started
+2022-10-21 null FINE Before user's input
+2022-10-21 null FINE User insert wrong input: '10'
+2022-10-21 null FINE Before user's input
+2022-10-21 null INFO After loop for sorter input where sorter selection = 1
+2022-10-21 null INFO Display message for number of elements selection
+2022-10-21 null INFO Do-While loop for number of elements input started
+2022-10-21 null FINE Before user's input
+2022-10-21 null INFO After loop for number of elements input where number of elements =  10
+2022-10-21 null INFO After random generation of array:
+[885, 251, 571, 446, 990, 267, 652, 206, 184, 456]
+2022-10-21 null INFO Before switch statement for sorter instantiation where choice = 1
+2022-10-21 null FINE Returns BinarySorter
+2022-10-21 null INFO Sort selection: 1 SortFactory returns: BinarySorter
+2022-10-21 null INFO The unsorted array as parsed in the method:
+[885, 251, 571, 446, 990, 267, 652, 206, 184, 456]
+2022-10-21 null INFO The sorted array as returned from sorter:
+[184, 206, 251, 267, 446, 456, 571, 652, 885, 990]
+2022-10-21 null INFO Program terminates

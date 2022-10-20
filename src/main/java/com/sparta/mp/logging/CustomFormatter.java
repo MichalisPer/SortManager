@@ -9,6 +9,7 @@ public class CustomFormatter extends Formatter {
     @Override
     public String format(LogRecord record) {
         return LocalDate.now().format(DateTimeFormatter.ISO_DATE)
+                + " " + record.getResourceBundleName()
                 + " " + record.getLevel()
                 + " " + record.getMessage()
                 + "\n";

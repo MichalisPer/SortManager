@@ -1,8 +1,12 @@
 package com.sparta.mp.display;
 
+import com.sparta.mp.logging.CustomLoggerConfiguration;
+import com.sparta.mp.logging.ProjectLogger;
 import com.sparta.mp.sorters.Sorter;
 
 import java.util.Arrays;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class DisplayManager {
 
@@ -32,8 +36,10 @@ public class DisplayManager {
 
     public static void displayResults(Sorter sorter, int[] array) {
         System.out.println("\nUnsorted array:\n" + Arrays.toString(array));
+        ProjectLogger.log(Level.INFO, "The unsorted array as parsed in the method:\n" + Arrays.toString(array));
         System.out.println("\nSorting array using " + sorter.toString() +"...");
         int[] sortedArray = sorter.sortArray(array);
+        ProjectLogger.log(Level.INFO, "The sorted array as returned from sorter:\n" + Arrays.toString(sortedArray));
         System.out.println("\nSorted array:\n" + Arrays.toString(sortedArray));
     }
 }
