@@ -136,14 +136,14 @@ public class BinaryTreeImpl implements BinaryTree {
 
     @Override
     public int[] getSortedTreeAsc() {
-        int[] arr = new int[this.numOfNodes];
+        int[] arr = new int[getNumOfNodes()];
         inOrderTraversal(this.root, arr, 0, true);
         return arr;
     }
 
     @Override
     public int[] getSortedTreeDesc() {
-        int[] arr = new int[this.numOfNodes];
+        int[] arr = new int[getNumOfNodes()];
         inOrderTraversal(this.root, arr, 0, false);
         return arr;
     }
