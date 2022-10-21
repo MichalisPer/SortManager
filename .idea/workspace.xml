@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="066f1a2f-710f-4567-b93c-57830d8e8b2c" name="Changes" comment="Add logging inside each class to track program during execution">
+    <list default="true" id="066f1a2f-710f-4567-b93c-57830d8e8b2c" name="Changes" comment="Add ChildNotFoundException">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/binarytree/BinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/binarytree/BinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/binarytree/BinaryTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/binarytree/BinaryTreeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,26 +35,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/perik/Desktop/SpartaGlobal/JavaPrograms/Logging&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/perik/Desktop/SpartaGlobal/Projects/SortManager/src/main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;Markdown&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Markdown"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\perik\Desktop\SpartaGlobal\Projects\SortManager\src\main" />
+      <recent name="C:\Users\perik\Desktop\SpartaGlobal\Projects\SortManager\src" />
       <recent name="C:\Users\perik\Desktop\SpartaGlobal\Projects\SortManager\src\main\java\com\sparta\mp" />
     </key>
   </component>
@@ -104,7 +106,7 @@
       <workItem from="1666191440957" duration="14014000" />
       <workItem from="1666253937274" duration="19539000" />
       <workItem from="1666299768275" duration="10754000" />
-      <workItem from="1666339574423" duration="14572000" />
+      <workItem from="1666339574423" duration="17403000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation of sortArray method in BubbleSorter class">
       <created>1666046393218</created>
@@ -155,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666354157435</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add ChildNotFoundException">
+      <created>1666360763282</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666360763282</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +189,7 @@
     <MESSAGE value="Implementation of QuickSort algorithm" />
     <MESSAGE value="Implementation of BinarySorter using in order traversal in BinaryTreeImpl" />
     <MESSAGE value="Add logging inside each class to track program during execution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add logging inside each class to track program during execution" />
+    <MESSAGE value="Add ChildNotFoundException" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ChildNotFoundException" />
   </component>
 </project>
