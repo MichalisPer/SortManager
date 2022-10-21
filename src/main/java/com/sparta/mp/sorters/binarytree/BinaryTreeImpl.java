@@ -53,9 +53,14 @@ public class BinaryTreeImpl implements BinaryTree {
     }
 
     public BinaryTreeImpl(int[] array) {
+        if (array == null || array.length==0) {
+            throw new IllegalArgumentException();
+        }
         this.root = new Node(array[0]);
         this.numOfNodes++;
-        addElements(Arrays.copyOfRange(array, 1, array.length));
+        if (array.length > 1) {
+            addElements(Arrays.copyOfRange(array, 1, array.length));
+        }
     }
 
     @Override
@@ -69,7 +74,7 @@ public class BinaryTreeImpl implements BinaryTree {
         this.numOfNodes++;
     }
 
-    public int getNumOfNodes() {
+    public int getNumberOfElements() {
         return numOfNodes;
     }
 
@@ -136,14 +141,14 @@ public class BinaryTreeImpl implements BinaryTree {
 
     @Override
     public int[] getSortedTreeAsc() {
-        int[] arr = new int[getNumOfNodes()];
+        int[] arr = new int[getNumberOfElements()];
         inOrderTraversal(this.root, arr, 0, true);
         return arr;
     }
 
     @Override
     public int[] getSortedTreeDesc() {
-        int[] arr = new int[getNumOfNodes()];
+        int[] arr = new int[getNumberOfElements()];
         inOrderTraversal(this.root, arr, 0, false);
         return arr;
     }

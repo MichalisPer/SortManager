@@ -1,12 +1,9 @@
 package com.sparta.mp.display;
 
-import com.sparta.mp.logging.CustomLoggerConfiguration;
 import com.sparta.mp.logging.ProjectLogger;
 import com.sparta.mp.sorters.Sorter;
-
 import java.util.Arrays;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class DisplayManager {
 

@@ -3,6 +3,8 @@ package com.sparta.mp.sorters.binarytree;
 public interface BinaryTree {
     int getRootElement();
 
+    int getNumberOfElements();
+
     void addElement(int element);
 
     void addElements(int[] elements);

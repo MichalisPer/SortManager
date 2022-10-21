@@ -1,14 +1,12 @@
 package com.sparta.mp.start;
 
 import com.sparta.mp.display.DisplayManager;
-import com.sparta.mp.logging.CustomLoggerConfiguration;
 import com.sparta.mp.logging.ProjectLogger;
 import com.sparta.mp.sorters.Sorter;
 import com.sparta.mp.utility.ArrayGenerator;
 
 import java.util.*;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
 public class SortManager {
@@ -59,7 +57,7 @@ public class SortManager {
         int[] array = ArrayGenerator.generateRandomArray(numberOfElements);
         ProjectLogger.log(Level.INFO, "After random generation of array: "+ Arrays.toString(array));
         Sorter sorter = SortFactory.getSorter(sorterSelection);
-        ProjectLogger.log(Level.INFO, "Sort selection: " + sorterSelection +" SortFactory returns: " + sorter.getClass().getSimpleName());
+        ProjectLogger.log(Level.INFO, "Sort selection: " + sorterSelection +", SortFactory returns: " + sorter.getClass().getSimpleName());
         DisplayManager.displayResults(sorter, array);
         ProjectLogger.log(Level.INFO, "Program terminates");
     }
