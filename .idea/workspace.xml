@@ -6,7 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="066f1a2f-710f-4567-b93c-57830d8e8b2c" name="Changes" comment="Changes to README.md file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BinarySorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BinarySorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BubbleSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BubbleSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/InsertionSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/InsertionSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/QuickSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/QuickSorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/Sorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/Sorter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/mp/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +67,7 @@
       <recent name="C:\Users\perik\Desktop\SpartaGlobal\Projects\SortManager\src\main\java\com\sparta\mp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.PerformanceTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sparta.mp.start.Main" />
       <module name="SortManager" />
@@ -75,17 +81,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+    <configuration name="PerformanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.mp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.mp" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.mp.PerformanceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.mp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.mp" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.mp.SortTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortTest.checkMaxSizeArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.mp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.mp" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.mp.SortTest" />
+      <option name="METHOD_NAME" value="checkMaxSizeArray(int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SortTest.checkThatSortersSortRandomArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.mp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.mp" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.mp.SortTest" />
+      <option name="METHOD_NAME" value="checkThatSortersSortRandomArray(int)" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PerformanceTest" />
+        <item itemvalue="JUnit.SortTester" />
+        <item itemvalue="JUnit.SortTest.checkMaxSizeArray" />
+        <item itemvalue="JUnit.SortTest.checkThatSortersSortRandomArray" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Java Scratch.Scratch" />
       </list>
     </recent_temporary>
   </component>
@@ -106,7 +170,7 @@
       <workItem from="1666191440957" duration="14014000" />
       <workItem from="1666253937274" duration="19539000" />
       <workItem from="1666299768275" duration="10754000" />
-      <workItem from="1666339574423" duration="18938000" />
+      <workItem from="1666339574423" duration="25118000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation of sortArray method in BubbleSorter class">
       <created>1666046393218</created>
@@ -171,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666364682152</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Changes to README.md file">
+      <created>1666366088096</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666366088096</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
