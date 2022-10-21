@@ -12,7 +12,7 @@ public class DisplayManager {
 
     public static void printWrongInputMessage(int lower, int upper) {
         System.out.printf("Wrong input! Please enter a number within the following range [%d-%d]: ",
-                lower,upper);
+                lower, upper);
     }
 
     public static void printRequestForElements() {
@@ -36,10 +36,13 @@ public class DisplayManager {
 
     public static void displayResults(Sorter sorter, int[] array) {
         System.out.println("\nUnsorted array:\n" + Arrays.toString(array));
-        ProjectLogger.log(Level.INFO, "The unsorted array as parsed in the method:\n" + Arrays.toString(array));
-        System.out.println("\nSorting array using " + sorter.toString() +"...");
+        ProjectLogger.log(Level.INFO, "The unsorted array as parsed in the method: " + Arrays.toString(array));
+        System.out.println("\nSorting array using " + sorter.toString() + "...");
+        long start = System.nanoTime();
         int[] sortedArray = sorter.sortArray(array);
-        ProjectLogger.log(Level.INFO, "The sorted array as returned from sorter:\n" + Arrays.toString(sortedArray));
+        long end = System.nanoTime();
+        ProjectLogger.log(Level.INFO, "The sorted array as returned from sorter: " + Arrays.toString(sortedArray));
         System.out.println("\nSorted array:\n" + Arrays.toString(sortedArray));
+        System.out.println("\nTime in nanoseconds: " + (end - start));
     }
 }

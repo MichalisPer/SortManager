@@ -57,7 +57,7 @@ public class SortManager {
         ProjectLogger.log(Level.INFO, "After loop for number of elements input where " +
                 "number of elements =  " + numberOfElements);
         int[] array = ArrayGenerator.generateRandomArray(numberOfElements);
-        ProjectLogger.log(Level.INFO, "After random generation of array:\n"+ Arrays.toString(array));
+        ProjectLogger.log(Level.INFO, "After random generation of array: "+ Arrays.toString(array));
         Sorter sorter = SortFactory.getSorter(sorterSelection);
         ProjectLogger.log(Level.INFO, "Sort selection: " + sorterSelection +" SortFactory returns: " + sorter.getClass().getSimpleName());
         DisplayManager.displayResults(sorter, array);

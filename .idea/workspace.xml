@@ -8,7 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/display/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/display/DisplayManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/logging/CustomFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/logging/CustomFormatter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BubbleSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BubbleSorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/my-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/my-log.log" afterDir="false" />
     </list>
@@ -106,7 +106,7 @@
       <workItem from="1666170378649" duration="61000" />
       <workItem from="1666191440957" duration="14014000" />
       <workItem from="1666253937274" duration="19539000" />
-      <workItem from="1666299768275" duration="8979000" />
+      <workItem from="1666299768275" duration="10540000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation of sortArray method in BubbleSorter class">
       <created>1666046393218</created>
