@@ -8,6 +8,6 @@ public class CustomLoggerConfiguration {
         logger.setUseParentHandlers(false); //Don't use any logging from the root logger
         logger.addHandler(CustomFileHandler.getFileHandler());
         logger.addHandler(CustomConsoleHandler.getConsoleHandler());
-        logger.setLevel(Level.OFF);
+        logger.setLevel(Level.ALL);
     }
 }

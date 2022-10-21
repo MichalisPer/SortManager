@@ -4,15 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="066f1a2f-710f-4567-b93c-57830d8e8b2c" name="Changes" comment="Changes to README.md file">
+    <list default="true" id="066f1a2f-710f-4567-b93c-57830d8e8b2c" name="Changes" comment="Implementation of tests for functionality and performance">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/display/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/display/DisplayManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/exceptions/SortLoaderException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/exceptions/SortLoaderException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/logging/CustomConsoleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/logging/CustomConsoleHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/logging/CustomFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/logging/CustomFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/logging/CustomLoggerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/logging/CustomLoggerConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BinarySorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BinarySorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BubbleSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BubbleSorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/InsertionSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/InsertionSorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/QuickSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/QuickSorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/Sorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/Sorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/mp/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/binarytree/BinaryTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/binarytree/BinaryTreeImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/my-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/my-log.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,33 +48,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/perik/Desktop/SpartaGlobal/Projects/SortManager/src/main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/perik/Desktop/SpartaGlobal/Projects/SortManager/src/main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Markdown"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Markdown&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.sparta.mp.exceptions" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\perik\Desktop\SpartaGlobal\Projects\SortManager\src\main" />
       <recent name="C:\Users\perik\Desktop\SpartaGlobal\Projects\SortManager\src" />
       <recent name="C:\Users\perik\Desktop\SpartaGlobal\Projects\SortManager\src\main\java\com\sparta\mp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PerformanceTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sparta.mp.start.Main" />
       <module name="SortManager" />
@@ -145,11 +155,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.PerformanceTest" />
-        <item itemvalue="JUnit.SortTester" />
         <item itemvalue="JUnit.SortTest.checkMaxSizeArray" />
         <item itemvalue="JUnit.SortTest.checkThatSortersSortRandomArray" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +179,8 @@
       <workItem from="1666191440957" duration="14014000" />
       <workItem from="1666253937274" duration="19539000" />
       <workItem from="1666299768275" duration="10754000" />
-      <workItem from="1666339574423" duration="25118000" />
+      <workItem from="1666339574423" duration="25213000" />
+      <workItem from="1666381166129" duration="4180000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation of sortArray method in BubbleSorter class">
       <created>1666046393218</created>
@@ -242,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666366088096</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Implementation of tests for functionality and performance">
+      <created>1666372220623</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666372220623</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +286,7 @@
     <MESSAGE value="Add logging inside each class to track program during execution" />
     <MESSAGE value="Add ChildNotFoundException" />
     <MESSAGE value="Changes to README.md file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes to README.md file" />
+    <MESSAGE value="Implementation of tests for functionality and performance" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation of tests for functionality and performance" />
   </component>
 </project>

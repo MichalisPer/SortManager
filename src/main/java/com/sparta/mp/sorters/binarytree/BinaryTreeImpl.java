@@ -54,8 +54,8 @@ public class BinaryTreeImpl implements BinaryTree {
         this.numOfNodes++;
     }
 
-    public BinaryTreeImpl(int[] array) {
-        if (array == null || array.length==0) {
+    public BinaryTreeImpl(int[] array) throws IllegalArgumentException {
+        if (array == null || array.length == 0) {
             throw new IllegalArgumentException();
         }
         this.root = new Node(array[0]);
@@ -155,11 +155,11 @@ public class BinaryTreeImpl implements BinaryTree {
         return arr;
     }
 
-    private int inOrderTraversal(Node node, int[] arr, int counter, boolean isAsc) {
+    private int inOrderTraversal(Node node, int[] arr, int counter, boolean asc) {
         if (node != null) {
-            counter = inOrderTraversal(isAsc ? node.getLeftChild() : node.getRightChild(), arr, counter, isAsc);
+            counter = inOrderTraversal(asc ? node.getLeftChild() : node.getRightChild(), arr, counter, asc);
             arr[counter++] = node.getValue();
-            counter = inOrderTraversal(isAsc ? node.getRightChild() : node.getLeftChild(), arr, counter, isAsc);
+            counter = inOrderTraversal(asc ? node.getRightChild() : node.getLeftChild(), arr, counter, asc);
             return counter;
         }
         return counter;

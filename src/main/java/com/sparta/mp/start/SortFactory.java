@@ -1,15 +1,14 @@
 package com.sparta.mp.start;
 
+import com.sparta.mp.exceptions.SortLoaderException;
 import com.sparta.mp.logging.ProjectLogger;
 import com.sparta.mp.sorters.*;
-import org.junit.jupiter.api.ClassOrderer;
 
-import java.lang.invoke.MethodHandles;
 import java.util.logging.Level;
 
 public class SortFactory {
 
-    public static Sorter getSorter(int choice) throws RuntimeException {
+    public static Sorter getSorter(int choice) throws SortLoaderException {
         ProjectLogger.log(Level.INFO, "Before switch statement for sorter instantiation where " +
                 "choice = " + choice);
         switch (choice) {
@@ -35,7 +34,7 @@ public class SortFactory {
             }
             default -> {
                 ProjectLogger.log(Level.WARNING, "Error with validation of user's input in sort selection");
-                throw new RuntimeException();
+                throw new SortLoaderException();
             }
         }
     }
