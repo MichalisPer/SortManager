@@ -1,5 +1,7 @@
 package com.sparta.mp.sorters.binarytree;
 
+import com.sparta.mp.exceptions.ChildNotFoundException;
+
 import java.util.Arrays;
 
 public class BinaryTreeImpl implements BinaryTree {
@@ -101,20 +103,20 @@ public class BinaryTreeImpl implements BinaryTree {
 
     @Override
     public boolean findElement(int value) {
-        return getElement(value, root) != null;
+        return getNode(value, root) != null;
     }
 
-    private Node getElement(int value, Node node) {
+    private Node getNode(int value, Node node) {
         if (value == node.value) {
             return node;
         } else if (value < node.value) {
             if (node.hasLeftNode()) {
-                getElement(value, node.leftChild);
+                getNode(value, node.getLeftChild());
             }
             return null;
         } else {
             if (node.hasRightNode()) {
-                getElement(value, node.rightChild);
+                getNode(value, node.getRightChild());
             }
             return null;
         }
@@ -122,21 +124,21 @@ public class BinaryTreeImpl implements BinaryTree {
 
 
     @Override
-    public int getLeftChild(int element) throws RuntimeException {
-        Node node = getElement(element, this.root);
+    public int getLeftChild(int element) throws ChildNotFoundException {
+        Node node = getNode(element, this.root);
         if (node != null && node.hasLeftNode()) {
             return node.getLeftChild().getValue();
         }
-        throw new RuntimeException();
+        throw new ChildNotFoundException();
     }
 
     @Override
-    public int getRightChild(int element) throws RuntimeException {
-        Node node = getElement(element, this.root);
+    public int getRightChild(int element) throws ChildNotFoundException {
+        Node node = getNode(element, this.root);
         if (node != null && node.hasRightNode()) {
             return node.getRightChild().getValue();
         }
-        throw new RuntimeException();
+        throw new ChildNotFoundException();
     }
 
     @Override
