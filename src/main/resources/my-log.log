@@ -1,5 +1,36 @@
-2022-10-21 INFO Display message for sorter selection
-2022-10-21 INFO Do-While loop for sorter input started
-2022-10-21 FINE Before user's input
-2022-10-21 FINE User insert wrong input: '55'
-2022-10-21 FINE Before user's input
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 1
+2022-10-21 FINE Returns BinarySorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 2
+2022-10-21 FINE Returns BubbleSorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 3
+2022-10-21 FINE Returns InsertionSorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 4
+2022-10-21 FINE Returns MergeSorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 5
+2022-10-21 FINE Returns QuickSorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 6
+2022-10-21 FINE Return SelectionSorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 1
+2022-10-21 FINE Returns BinarySorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 2
+2022-10-21 FINE Returns BubbleSorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 3
+2022-10-21 FINE Returns InsertionSorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 4
+2022-10-21 FINE Returns MergeSorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 5
+2022-10-21 FINE Returns QuickSorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 6
+2022-10-21 FINE Return SelectionSorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 1
+2022-10-21 FINE Returns BinarySorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 2
+2022-10-21 FINE Returns BubbleSorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 3
+2022-10-21 FINE Returns InsertionSorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 4
+2022-10-21 FINE Returns MergeSorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 5
+2022-10-21 FINE Returns QuickSorter
+2022-10-21 INFO Before switch statement for sorter instantiation where choice = 6
+2022-10-21 FINE Return SelectionSorter

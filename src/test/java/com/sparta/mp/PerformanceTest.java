@@ -1,16 +1,17 @@
 package com.sparta.mp;
 
+import com.sparta.mp.display.DisplayManager;
 import com.sparta.mp.sorters.Sorter;
 import com.sparta.mp.start.SortFactory;
 import com.sparta.mp.utility.ArrayGenerator;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
+import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.Arrays;
+import java.util.stream.IntStream;
 
 public class PerformanceTest {
 
@@ -29,8 +30,12 @@ public class PerformanceTest {
         unsortedArray1000 = ArrayGenerator.generateRandomArray(1000);
     }
 
+    public static IntStream getAvailableSorters() {
+        return IntStream.rangeClosed(1, DisplayManager.getAvailableSorters().length);
+    }
+
     @ParameterizedTest
-    @ValueSource(ints = {1, 2, 3, 4, 5})
+    @MethodSource("getAvailableSorters")
     @DisplayName("Check that all sorting algorithms sort an even sized random array")
     void checkPerformanceWithSmallSizeArray(int value) {
         int[] arrayToSort = unsortedArray10.clone();
@@ -45,7 +50,7 @@ public class PerformanceTest {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {1, 2, 3, 4, 5})
+    @MethodSource("getAvailableSorters")
     @DisplayName("Check that all sorting algorithms sort an even sized random array")
     void checkPerformanceWithMidSizeArray(int value) {
         int[] arrayToSort = unsortedArray500.clone();
@@ -60,7 +65,7 @@ public class PerformanceTest {
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {1, 2, 3, 4, 5})
+    @MethodSource("getAvailableSorters")
     @DisplayName("Check that all sorting algorithms sort an even sized random array")
     void checkPerformanceWithLargeSizeArray(int value) {
         int[] arrayToSort = unsortedArray1000.clone();

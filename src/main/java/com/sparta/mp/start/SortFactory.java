@@ -32,6 +32,10 @@ public class SortFactory {
                 ProjectLogger.log(Level.FINE, "Returns QuickSorter");
                 return new QuickSorter();
             }
+            case 6 -> {
+                ProjectLogger.log(Level.FINE, "Return SelectionSorter");
+                return new SelectionSorter();
+            }
             default -> {
                 ProjectLogger.log(Level.WARNING, "Error with validation of user's input in sort selection");
                 throw new SortLoaderException();

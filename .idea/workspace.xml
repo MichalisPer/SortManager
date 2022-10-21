@@ -4,22 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="066f1a2f-710f-4567-b93c-57830d8e8b2c" name="Changes" comment="Implementation of tests for functionality and performance">
+    <list default="true" id="066f1a2f-710f-4567-b93c-57830d8e8b2c" name="Changes" comment="Removed commented logging inside sortArray method - Add new exception">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/display/DisplayManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/display/DisplayManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/exceptions/SortLoaderException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/exceptions/SortLoaderException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/logging/CustomConsoleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/logging/CustomConsoleHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/logging/CustomFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/logging/CustomFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/logging/CustomLoggerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/logging/CustomLoggerConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BinarySorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BinarySorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BubbleSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/BubbleSorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/InsertionSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/InsertionSorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/MergeSorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/QuickSorter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/QuickSorter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/binarytree/BinaryTreeImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/sorters/binarytree/BinaryTreeImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sparta/mp/start/SortManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/my-log.log" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/my-log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/mp/PerformanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/mp/PerformanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sparta/mp/SortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sparta/mp/SortTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +68,7 @@
       <recent name="C:\Users\perik\Desktop\SpartaGlobal\Projects\SortManager\src\main\java\com\sparta\mp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.PerformanceTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sparta.mp.start.Main" />
       <module name="SortManager" />
@@ -121,6 +112,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SortTest.checkEvenSizeArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SortManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sparta.mp.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sparta.mp" />
+      <option name="MAIN_CLASS_NAME" value="com.sparta.mp.SortTest" />
+      <option name="METHOD_NAME" value="checkEvenSizeArray(int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SortTest.checkMaxSizeArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SortManager" />
       <extension name="coverage">
@@ -137,28 +144,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortTest.checkThatSortersSortRandomArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SortManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sparta.mp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sparta.mp" />
-      <option name="MAIN_CLASS_NAME" value="com.sparta.mp.SortTest" />
-      <option name="METHOD_NAME" value="checkThatSortersSortRandomArray(int)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.PerformanceTest" />
+        <item itemvalue="JUnit.SortTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SortTest.checkEvenSizeArray" />
         <item itemvalue="JUnit.SortTest.checkMaxSizeArray" />
-        <item itemvalue="JUnit.SortTest.checkThatSortersSortRandomArray" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +172,7 @@
       <workItem from="1666253937274" duration="19539000" />
       <workItem from="1666299768275" duration="10754000" />
       <workItem from="1666339574423" duration="25213000" />
-      <workItem from="1666381166129" duration="4180000" />
+      <workItem from="1666381166129" duration="5647000" />
     </task>
     <task id="LOCAL-00001" summary="Implementation of sortArray method in BubbleSorter class">
       <created>1666046393218</created>
@@ -259,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666372220623</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Removed commented logging inside sortArray method - Add new exception">
+      <created>1666386198399</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1666386198399</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +286,7 @@
     <MESSAGE value="Add ChildNotFoundException" />
     <MESSAGE value="Changes to README.md file" />
     <MESSAGE value="Implementation of tests for functionality and performance" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementation of tests for functionality and performance" />
+    <MESSAGE value="Removed commented logging inside sortArray method - Add new exception" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed commented logging inside sortArray method - Add new exception" />
   </component>
 </project>

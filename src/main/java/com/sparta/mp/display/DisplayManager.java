@@ -10,7 +10,7 @@ public class DisplayManager {
 
     public static String[] getAvailableSorters() {
         return new String[]{"BinarySorter", "BubbleSorter", "InsertionSorter",
-                "MergeSorter", "QuickSorter"};
+                "MergeSorter", "QuickSorter", "SelectionSorter"};
     }
 
     public static void displaySortAlgorithms() {
